@@ -121,6 +121,7 @@ public class Keywords {
         while(rs1.next()){
 	    System.out.println("Shownames : " +rs1.getString(1));
         log("Showname  " +i+": " +rs1.getString(1));
+        i++;
         }
         log(" Ending getActiveShowsNames");
 	

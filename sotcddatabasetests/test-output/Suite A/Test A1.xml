@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Lenovo-PC" name="com.qtpselenium.framework.SuiteA.TestA1" tests="8" failures="0" timestamp="25 Aug 2015 06:54:26 GMT" time="1.236" errors="0">
-  <testcase name="SetUpDbConnection" time="0.219" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="ActiveShowsCountTest" time="0.063" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="ActiveShowsListTest" time="0.062" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="GetAsset_Shows_Users_Count" time="0.078" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="GetAsset_Shows_Users_Count" time="0.031" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+<testsuite hostname="Lenovo-PC" name="com.qtpselenium.framework.SuiteA.TestA1" tests="8" failures="0" timestamp="25 Aug 2015 07:16:17 GMT" time="2.393" errors="0">
+  <testcase name="SetUpDbConnection" time="1.385" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="ActiveShowsCountTest" time="0.079" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="ActiveShowsListTest" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
   <testcase name="GetAsset_Shows_Users_Count" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="GetAsset_Shows_Users_Count" time="0.031" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="CloseDbConnection" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="GetAsset_Shows_Users_Count" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="GetAsset_Shows_Users_Count" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="GetAsset_Shows_Users_Count" time="0.062" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="CloseDbConnection" time="0.031" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
 </testsuite>

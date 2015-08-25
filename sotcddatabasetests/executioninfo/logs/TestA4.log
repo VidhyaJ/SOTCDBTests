@@ -1,0 +1,4 @@
+2015-08-21 13:58:35,768 DEBUG [TestA4] TestA4
+2015-08-21 13:58:35,827 DEBUG [TestA4] Closing Connection
+2015-08-21 13:58:35,844 DEBUG [TestA4] Connection closed successfully
+2015-08-21 13:58:35,844 DEBUG [TestA4] Ending : TestA4

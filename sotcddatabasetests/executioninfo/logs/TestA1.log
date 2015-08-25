@@ -1,0 +1,10 @@
+2015-08-21 14:03:12,204 DEBUG [TestA1] TestA1
+2015-08-21 14:03:12,457 DEBUG [TestA1] Connection Successful
+2015-08-21 14:03:12,458 DEBUG [TestA1] Ending : TestA1
+2015-08-21 14:03:12,641 DEBUG [TestA1] select count(*) from tbl_assets
+2015-08-21 14:03:12,731 DEBUG [TestA1] Total Records in table is  : 213
+2015-08-21 14:03:12,862 DEBUG [TestA1] select count(*) from tbl_user
+2015-08-21 14:03:12,865 DEBUG [TestA1] Total Records in table is  : 38
+2015-08-21 14:03:12,972 DEBUG [TestA1] Closing Connection
+2015-08-21 14:03:12,973 DEBUG [TestA1] Connection closed successfully
+2015-08-21 14:03:12,973 DEBUG [TestA1] Ending : TestA4

@@ -1,0 +1,4 @@
+2015-08-21 13:34:09,394 DEBUG [TestA1 - 1] TestA1 - 1
+2015-08-21 13:34:09,395 DEBUG [TestA1 - 1] Logger : TestA1 - 1
+2015-08-21 13:34:09,395 DEBUG [TestA1 - 1] Executing : TestA1
+2015-08-21 13:34:09,763 DEBUG [TestA1 - 1] Ending : TestA1

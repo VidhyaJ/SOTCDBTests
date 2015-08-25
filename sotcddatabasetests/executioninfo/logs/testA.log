@@ -1,0 +1,15 @@
+2015-08-21 14:51:09,062 DEBUG [testA] testA
+2015-08-21 14:51:10,424 DEBUG [testA] select playname from tbl_sharelink where playname<>''
+2015-08-21 14:51:10,955 DEBUG [testA] Connection Successful
+2015-08-21 14:51:10,955 DEBUG [testA] Ending : TestA1
+2015-08-21 14:51:11,155 DEBUG [testA] select count(*) from tbl_assets
+2015-08-21 14:51:11,407 DEBUG [testA] Total Records in table is  : 213
+2015-08-21 14:51:12,523 DEBUG [testA] select count(*) from tbl_user
+2015-08-21 14:51:12,541 DEBUG [testA] Total Records in table is  : 38
+2015-08-21 14:51:12,598 DEBUG [testA] select count(*) from tbl_sharelink
+2015-08-21 14:51:12,618 DEBUG [testA] Total Records in table is  : 329
+2015-08-21 14:51:13,373 DEBUG [testA] select count(*) from tbl_sharelink where playname<>''
+2015-08-21 14:51:13,377 DEBUG [testA] Total Records in table is  : 26
+2015-08-21 14:51:14,423 DEBUG [testA] Closing Connection
+2015-08-21 14:51:14,424 DEBUG [testA] Connection closed successfully
+2015-08-21 14:51:14,424 DEBUG [testA] Ending : TestA4

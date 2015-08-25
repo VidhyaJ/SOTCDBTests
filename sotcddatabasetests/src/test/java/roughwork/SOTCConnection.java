@@ -43,14 +43,19 @@ package roughwork;
 				  }
 
 				  Statement stmt1 = conn.createStatement();
-				  String query1="select count(*) as totalassets from tbl_assets";
+				 // String query1="select count(*) as totalassets from tbl_assets";
+				  String query1="select playname from tbl_sharelink where playname<>''";
 				  rs1 = stmt1.executeQuery(query1);
-				  
 				  while(rs1.next()){
+					  System.out.println("Hi");
+						System.out.println(rs1.getString(1));
+				  }
+				  
+				  /*while(rs1.next()){
 					  count=String.valueOf(rs1.getInt("totalassets"));
 					  System.out.println("Total assets in the domain is  : " +count);
 					  writetofile(filename,count);
-			  	   }
+			  	   }*/
 				  
 			/*	  query1="Select count(*) as totalusers from users";
 				  rs1 = stmt1.executeQuery(query1);

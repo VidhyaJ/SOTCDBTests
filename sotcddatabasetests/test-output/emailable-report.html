@@ -29,95 +29,65 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test A1</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">5.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test A1</td><td class="numi">8</td><td class="numi">8</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
-<tr><th colspan="4">Test A1 &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="5">com.qtpselenium.framework.SuiteA.TestA1<td><a href="#m1"><b>ActiveShowsTest</b>  </a></td><td class="numi">1</td><td class="numi">120</td></tr><tr class="failedodd"><td><a href="#m2"><b>testA2</b>  </a></td><td class="numi">4</td><td class="numi">2339</td></tr><tr class="failedodd"><td><a href="#m3"><b>testA2</b>  </a></td><td class="numi">4</td><td class="numi">2339</td></tr><tr class="failedodd"><td><a href="#m4"><b>testA2</b>  </a></td><td class="numi">4</td><td class="numi">2339</td></tr><tr class="failedodd"><td><a href="#m5"><b>testA2</b>  </a></td><td class="numi">4</td><td class="numi">2339</td></tr>
 <tr><th colspan="4">Test A1 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">com.qtpselenium.framework.SuiteA.TestA1<td><a href="#m6"><b>testA4</b>  </a></td><td class="numi">1</td><td class="numi">1013</td></tr><tr class="passedodd"><td><a href="#m7"><b>testA1</b>  </a></td><td class="numi">1</td><td class="numi">471</td></tr>
+<tr class="passedodd"><td rowspan="8">com.qtpselenium.framework.SuiteA.TestA1<td><a href="#m1"><b>ActiveShowsCountTest</b>  </a></td><td class="numi">1</td><td class="numi">63</td></tr><tr class="passedodd"><td><a href="#m2"><b>ActiveShowsListTest</b>  </a></td><td class="numi">1</td><td class="numi">62</td></tr><tr class="passedodd"><td><a href="#m3"><b>GetAsset_Shows_Users_Count</b>  </a></td><td class="numi">4</td><td class="numi">203</td></tr><tr class="passedodd"><td><a href="#m4"><b>CloseDbConnection</b>  </a></td><td class="numi">1</td><td class="numi">47</td></tr><tr class="passedodd"><td><a href="#m5"><b>SetUpDbConnection</b>  </a></td><td class="numi">1</td><td class="numi">219</td></tr><tr class="passedodd"><td><a href="#m6"><b>GetAsset_Shows_Users_Count</b>  </a></td><td class="numi">4</td><td class="numi">203</td></tr><tr class="passedodd"><td><a href="#m7"><b>GetAsset_Shows_Users_Count</b>  </a></td><td class="numi">4</td><td class="numi">203</td></tr><tr class="passedodd"><td><a href="#m8"><b>GetAsset_Shows_Users_Count</b>  </a></td><td class="numi">4</td><td class="numi">203</td></tr>
 </table>
 <h1>Test A1</h1>
-<a id="m1"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:ActiveShowsTest</h2>
+<a id="m1"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:ActiveShowsCountTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=1, query=select count(*) from tbl_sharelink where playname&lt;&gt;&apos;&apos;}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:ActiveShowsListTest</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
 <tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=1, query=select playname from tbl_sharelink where playname&lt;&gt;&apos;&apos;}</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>null</p>
-com.qtpselenium.framework.Util.Keywords.getShows(Keywords.java:161)
-<br/>at com.qtpselenium.framework.Util.Keywords.executeKeywords(Keywords.java:92)
-<br/>at com.qtpselenium.framework.SuiteA.TestA1.ActiveShowsTest(TestA1.java:58)
-<br/>21 lines not shown
-</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:testA2</h2>
+<a id="m3"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:GetAsset_Shows_Users_Count</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
 <tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=4, query=select count(*) from tbl_sharelink where playname&lt;&gt;&apos;&apos;}</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>null</p>
-com.qtpselenium.framework.Util.Keywords.getAssets(Keywords.java:143)
-<br/>at com.qtpselenium.framework.Util.Keywords.executeKeywords(Keywords.java:95)
-<br/>at com.qtpselenium.framework.SuiteA.TestA1.testA2(TestA1.java:46)
-<br/>21 lines not shown
-</td></tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:testA2</h2>
+<a id="m4"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:CloseDbConnection</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=1, query=select count(*) from tbl_assets}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>null</p>
-com.qtpselenium.framework.Util.Keywords.getAssets(Keywords.java:143)
-<br/>at com.qtpselenium.framework.Util.Keywords.executeKeywords(Keywords.java:95)
-<br/>at com.qtpselenium.framework.SuiteA.TestA1.testA2(TestA1.java:46)
-<br/>21 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:testA2</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=2, query=select count(*) from tbl_user}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>null</p>
-com.qtpselenium.framework.Util.Keywords.getAssets(Keywords.java:143)
-<br/>at com.qtpselenium.framework.Util.Keywords.executeKeywords(Keywords.java:95)
-<br/>at com.qtpselenium.framework.SuiteA.TestA1.testA2(TestA1.java:46)
-<br/>21 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:testA2</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=3, query=select count(*) from tbl_sharelink}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>null</p>
-com.qtpselenium.framework.Util.Keywords.getAssets(Keywords.java:143)
-<br/>at com.qtpselenium.framework.Util.Keywords.executeKeywords(Keywords.java:95)
-<br/>at com.qtpselenium.framework.SuiteA.TestA1.testA2(TestA1.java:46)
-<br/>21 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m6"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:testA4</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=1}</td>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=1, query=}</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m7"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:testA1</h2>
+<a id="m5"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:SetUpDbConnection</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
 <tr><td style="padding-left:.5em;padding-right:2em">{password=postgres, Runmode=Y, Iteration=1, driver=org.postgresql.Driver, ipaddress=10.37.4.140:5432, database=senthilrun, username=postgres}</td>
 </tr>
 </table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:GetAsset_Shows_Users_Count</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=3, query=select count(*) from tbl_sharelink}</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:GetAsset_Shows_Users_Count</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=1, query=select count(*) from tbl_assets}</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.qtpselenium.framework.SuiteA.TestA1:GetAsset_Shows_Users_Count</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Iteration=2, query=select count(*) from tbl_user}</td>
+</tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

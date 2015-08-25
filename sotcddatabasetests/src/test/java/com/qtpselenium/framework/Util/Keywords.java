@@ -60,6 +60,7 @@ public class Keywords {
 	public static Statement stmt1=null;
 	public static Connection conn;
 	
+		
 	public Keywords(){
 			// initialize properties file
 		prop=new Properties();
@@ -77,30 +78,32 @@ public class Keywords {
 			Hashtable<String, String> data) throws Exception {
 		
 		
-		System.out.println("In ExecuteKeywords : " +testName);
+		//System.out.println("In ExecuteKeywords : " +testName);
 		int rows = xls.getRowCount(Constants.KEYWORDS_SHEET);
 		for(int rNum=2;rNum<=rows;rNum++){
 			String tcid = xls.getCellData(Constants.KEYWORDS_SHEET, 0, rNum);
 			if(tcid.equalsIgnoreCase(testName)){
 				String keyword = xls.getCellData(Constants.KEYWORDS_SHEET, 2, rNum);
-				String object = xls.getCellData(Constants.KEYWORDS_SHEET, 3, rNum);
+				//String object = xls.getCellData(Constants.KEYWORDS_SHEET, 3, rNum);
 				String dataCol = xls.getCellData(Constants.KEYWORDS_SHEET, 4, rNum);
-				System.out.println(keyword +" --- "+object+" --- "+dataCol);
-							
+			//	System.out.println(keyword +" --- "+object+" --- "+dataCol);
+									
 				switch (keyword) {
-				case "getShows":
-					getShows(data.get("query"));
-					break;
-				case "getAssets":
-					getAssets(data.get("query"));
-					break;
+				case "getActiveShowsCount":
+					  getActiveShowsCount(data.get("query"));
+					  break;
+				case "getActiveShowsNames":
+					  getActiveShowsNames(data.get("query"));
+					  break;
+				case "getRecordCount":
+					  getRecordCount(data.get("query"));
+					  break;
 				case "OpendbConnection":
 					OpendbConnection(data.get("username"),data.get("password"),data.get("ipaddress"),data.get("driver"),data.get("database"));
 					break;
 				case "closedbConnection":
 					closedbConnection();
 					break;
-					
 				default:
 					break;
 				}		
@@ -108,17 +111,37 @@ public class Keywords {
 		}			
 	}
 
+	public void getActiveShowsNames(String query) throws SQLException {
+		
+		log("Starting getActiveShowsNames");
+		log(query);		
+	    stmt1 = conn.createStatement();
+    	rs1 = stmt1.executeQuery(query);
+    	int i=1;
+        while(rs1.next()){
+	    System.out.println("Shownames : " +rs1.getString(1));
+        log("Showname  " +i+": " +rs1.getString(1));
+        }
+        log(" Ending getActiveShowsNames");
+	
+	
+		// TODO Auto-generated method stub
+		
+		
+	}
+
 	public void closedbConnection() throws SQLException {
-		System.out.println("Close Connection");
-		log("Closing Connection");
+		
+		log("Start Closing Connection");
 		   	conn.close();
-		   	log("Connection closed successfully");
+		log("Connection closed successfully");
 		    }
 
 
 	public void OpendbConnection(String uname,String passwd,String ip,String dr,String db) throws SQLException {
 		// TODO Auto-generated method stub
-			System.out.println("Open connection");
+			
+			log("Starting OpenDbConnection");
 			String driver=dr;
 			String userName = uname;
 			String password = passwd;  
@@ -126,48 +149,37 @@ public class Keywords {
 			try{
 			  Class.forName(driver).newInstance();// create object of Driver
 			  conn = DriverManager.getConnection(hostname,userName,password);
-			  log("Connection Successful");
+			  log("Connection to database is Successful");
 			}catch(Exception e){
 				e.printStackTrace();
-				log("Connection Failure");
+				log("Connection Failure.Please check");
 			}
 		}
 	
-	public void getAssets(String query) throws SQLException {
-		// TODO Auto-generated method stub
-		System.out.println(query);
-				log(query);		
-			   stmt1 = conn.createStatement();
-		    	rs1 = stmt1.executeQuery(query);
+	public void getRecordCount(String query) throws SQLException {
+   		        
+		log("Starting getRecordCount function");
+		log(query);		
+	    stmt1 = conn.createStatement();
+    	rs1 = stmt1.executeQuery(query);
 	    
 		  	  while(rs1.next()){
-			  //count=String.valueOf(rs1.getInt(1));
-			  System.out.println("Total Records in table is  : " +rs1.getInt(1));
 			  log("Total Records in table is  : " +rs1.getInt(1));
-			  rs1=null;
-			  stmt1=null;
-			  
-			  //writetofile(filename,count);
 	  	   }
+		  	log("Ending getRecordCount function");
 		
 	}
 
-	public void getShows(String query) throws SQLException {
-		// TODO Auto-generated method stub
-		System.out.println(" In getShows");
-		
-		System.out.println(query);
+	public void getActiveShowsCount(String query) throws SQLException {
+		log("Starting getActiveShowsCount function");
 		log(query);		
-	   stmt1 = conn.createStatement();
+	    stmt1 = conn.createStatement();
     	rs1 = stmt1.executeQuery(query);
-
-  	  while(rs1.next()){
-	  //count=String.valueOf(rs1.getInt(1));
-	  System.out.println("Records are : " +rs1.getString(1));
-	  log("Total Records in table is  : " +rs1.getString(1));
-	  rs1=null;
-	  stmt1=null;
-	}
+        while(rs1.next()){
+        log("Total Records in table is  : " +rs1.getString(1));
+       
+        }
+        log("Ending getActiveShowsCount function");
 	}
 	
 	public void setLogger(Logger log){
@@ -176,7 +188,7 @@ public class Keywords {
 		
 	public static void log(String message)
 	{
-		System.out.println(message);
+		
 		Application_Log.debug(message);
 	}
 	

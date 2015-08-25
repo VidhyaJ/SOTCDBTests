@@ -24,9 +24,10 @@ public class TestA1 {
 		log=Utility.initLogs(testName);
 	}
 		
+	
 	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA")
-	public void testA1(Hashtable<String,String> data) throws Exception{
-		String testName="TestA1";
+	public void SetUpDbConnection(Hashtable<String,String> data) throws Exception{
+		String testName="SetUpDbConnection";
 		Xls_Reader xls = new Xls_Reader(Constants.SUITEA_XLS_PATH);
 		Utility.validateTestExecution(testName,"SUITEA",data.get(Constants.RUNMODE_COL),xls);
 		Keywords app = Keywords.getInstance();
@@ -36,9 +37,9 @@ public class TestA1 {
 		
 	}
 
-	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA")
-	public void testA2(Hashtable<String,String> data) throws Exception{
-		String testName="TestA2";
+	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA",dependsOnMethods = { "SetUpDbConnection" })
+	public void GetAsset_Shows_Users_Count(Hashtable<String,String> data) throws Exception{
+		String testName="GetAsset_Shows_Users_Count";
 		Xls_Reader xls = new Xls_Reader(Constants.SUITEA_XLS_PATH);
 		Utility.validateTestExecution(testName,"SUITEA",data.get(Constants.RUNMODE_COL),xls);
 		Keywords app = Keywords.getInstance();
@@ -48,9 +49,9 @@ public class TestA1 {
 		
 	}
 	
-	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA")
-	public void ActiveShowsTest(Hashtable<String,String> data) throws Exception{
-		String testName="ActiveShowsTest";
+	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA",dependsOnMethods = { "SetUpDbConnection" })
+	public void ActiveShowsCountTest(Hashtable<String,String> data) throws Exception{
+		String testName="ActiveShowsCountTest";
 		Xls_Reader xls = new Xls_Reader(Constants.SUITEA_XLS_PATH);
 		Utility.validateTestExecution(testName,"SUITEA",data.get(Constants.RUNMODE_COL),xls);
 		Keywords app = Keywords.getInstance();
@@ -60,9 +61,24 @@ public class TestA1 {
 	
 	}
 	
+	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA",dependsOnMethods = { "SetUpDbConnection" })
+	public void ActiveShowsListTest(Hashtable<String,String> data) throws Exception{
+		String testName="ActiveShowsListTest";
+		Xls_Reader xls = new Xls_Reader(Constants.SUITEA_XLS_PATH);
+		Utility.validateTestExecution(testName,"SUITEA",data.get(Constants.RUNMODE_COL),xls);
+		Keywords app = Keywords.getInstance();
+		app.setLogger(log);
+		app.executeKeywords(testName,xls,data);
+		log.debug("Ending : "+testName);
+	
+	}
+
+	
+	
+	
 	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA")
-	public void testA4(Hashtable<String,String> data) throws Exception{
-		String testName="TestA4";
+	public void CloseDbConnection(Hashtable<String,String> data) throws Exception{
+		String testName="CloseDbConnection";
 		Xls_Reader xls = new Xls_Reader(Constants.SUITEA_XLS_PATH);
 		Utility.validateTestExecution(testName,"SUITEA",data.get(Constants.RUNMODE_COL),xls);
 		Keywords app = Keywords.getInstance();

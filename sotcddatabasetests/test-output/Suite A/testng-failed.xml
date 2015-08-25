@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite A]" parallel="tests">
-  <test name="Test A1(failed)" parallel="tests" preserve-order="false">
+<suite verbose="0" name="Failed suite [Suite A]">
+  <test name="Test A1(failed)" preserve-order="false">
     <classes>
       <class name="com.qtpselenium.framework.SuiteA.TestA1">
         <methods>
+          <include name="ActiveShowsCountTest" invocation-numbers="0"/>
+          <include name="SetUpDbConnection"/>
           <include name="initializeTest"/>
-          <include name="ActiveShowsTest" invocation-numbers="0"/>
-          <include name="testA2" invocation-numbers="0 1 2 3"/>
         </methods>
       </class>
     </classes>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2015-08-27 15:20:22,692 DEBUG [testA] testA
 2015-08-27 15:20:23,271 DEBUG [testA] Starting OpenDbConnection
 2015-08-27 15:20:23,771 DEBUG [testA] Connection to database is Successful
@@ -144,3 +145,67 @@
 2015-08-27 15:20:24,450 DEBUG [testA] Start Closing Connection
 2015-08-27 15:20:24,450 DEBUG [testA] Connection closed successfully
 2015-08-27 15:20:24,450 DEBUG [testA] Ending : CloseDbConnection
+=======
+2015-08-25 12:46:15,361 DEBUG [testA] testA
+2015-08-25 12:46:15,919 DEBUG [testA] Starting OpenDbConnection
+2015-08-25 12:46:17,246 DEBUG [testA] Connection to database is Successful
+2015-08-25 12:46:17,246 DEBUG [testA] Ending : SetUpDbConnection
+2015-08-25 12:46:17,331 DEBUG [testA] Starting getActiveShowsCount function
+2015-08-25 12:46:17,331 DEBUG [testA] select count(*) from tbl_sharelink where playname<>''
+2015-08-25 12:46:17,347 DEBUG [testA] Total Records in table is  : 26
+2015-08-25 12:46:17,347 DEBUG [testA] Ending getActiveShowsCount function
+2015-08-25 12:46:17,347 DEBUG [testA] Ending : ActiveShowsCountTest
+2015-08-25 12:46:17,425 DEBUG [testA] Starting getActiveShowsNames
+2015-08-25 12:46:17,425 DEBUG [testA] select playname from tbl_sharelink where playname<>''
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  1: 06
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  2: 01
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  3: 08
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  4: 12
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  5: 13
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  6: 14
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  7: 13
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  8: 08
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  9: 04
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  10: 05
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  11: 10
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  12: 16
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  13: 12
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  14: 03
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  15: 07
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  16: 07
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  17: 20
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  18: 20
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  19: New
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  20: New
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  21: New
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  22: New
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  23: One
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  24: One
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  25: Gangadharan
+2015-08-25 12:46:17,440 DEBUG [testA] Showname  26: Gangadharan
+2015-08-25 12:46:17,440 DEBUG [testA]  Ending getActiveShowsNames
+2015-08-25 12:46:17,440 DEBUG [testA] Ending : ActiveShowsListTest
+2015-08-25 12:46:17,487 DEBUG [testA] Starting getRecordCount function
+2015-08-25 12:46:17,487 DEBUG [testA] select count(*) from tbl_assets
+2015-08-25 12:46:17,503 DEBUG [testA] Total Records in table is  : 213
+2015-08-25 12:46:17,503 DEBUG [testA] Ending getRecordCount function
+2015-08-25 12:46:17,503 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-25 12:46:17,550 DEBUG [testA] Starting getRecordCount function
+2015-08-25 12:46:17,550 DEBUG [testA] select count(*) from tbl_user
+2015-08-25 12:46:17,550 DEBUG [testA] Total Records in table is  : 38
+2015-08-25 12:46:17,550 DEBUG [testA] Ending getRecordCount function
+2015-08-25 12:46:17,550 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-25 12:46:17,597 DEBUG [testA] Starting getRecordCount function
+2015-08-25 12:46:17,597 DEBUG [testA] select count(*) from tbl_sharelink
+2015-08-25 12:46:17,597 DEBUG [testA] Total Records in table is  : 329
+2015-08-25 12:46:17,597 DEBUG [testA] Ending getRecordCount function
+2015-08-25 12:46:17,597 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-25 12:46:17,643 DEBUG [testA] Starting getRecordCount function
+2015-08-25 12:46:17,643 DEBUG [testA] select count(*) from tbl_sharelink where playname<>''
+2015-08-25 12:46:17,659 DEBUG [testA] Total Records in table is  : 26
+2015-08-25 12:46:17,659 DEBUG [testA] Ending getRecordCount function
+2015-08-25 12:46:17,659 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-25 12:46:17,706 DEBUG [testA] Start Closing Connection
+2015-08-25 12:46:17,706 DEBUG [testA] Connection closed successfully
+2015-08-25 12:46:17,706 DEBUG [testA] Ending : CloseDbConnection
+>>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479

@@ -73,7 +73,18 @@ public class TestA1 {
 	
 	}
 
+	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA",dependsOnMethods = { "SetUpDbConnection" })
+	public void GetAssetsinShowTest(Hashtable<String,String> data) throws Exception{
+		String testName="GetAssetsinShowTest";
+		Xls_Reader xls = new Xls_Reader(Constants.SUITEA_XLS_PATH);
+		Utility.validateTestExecution(testName,"SUITEA",data.get(Constants.RUNMODE_COL),xls);
+		Keywords app = Keywords.getInstance();
+		app.setLogger(log);
+		app.executeKeywords(testName,xls,data);
+		log.debug("Ending : "+testName);
 	
+	}
+
 	
 	
 	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA")

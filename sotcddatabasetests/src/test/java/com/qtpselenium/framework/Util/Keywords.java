@@ -57,8 +57,11 @@ public class Keywords {
 	static Keywords k;
 	public static String count;
 	public static ResultSet rs1=null;
+	public static ResultSet rs3=null;
 	public static Statement stmt1=null;
+	public static Statement stmt2=null;
 	public static Connection conn;
+	public static String assetIds=null;
 	
 		
 	public Keywords(){
@@ -104,11 +107,45 @@ public class Keywords {
 				case "closedbConnection":
 					closedbConnection();
 					break;
+				case "getAssetsinShow":
+					  getAssetsinShow(data.get("showname"));
 				default:
 					break;
 				}		
 			}
 		}			
+	}
+
+	public void getAssetsinShow(String show) throws SQLException {
+	
+		  log("Starting getAssetsinShow " +show);
+		   stmt1 = conn.createStatement();
+		  stmt2 = conn.createStatement();
+		 
+		  log("**********select assetdata from tbl_sharelink where playname like "+"\'"+show+"\'********");
+		  
+		  //String query1="select assetdata,playname from tbl_sharelink where playname like "+"'"+show+"'";
+		  String query1="select assetdata,playname from tbl_sharelink where playname ='"+show+"'";
+		 
+		  System.out.println(query1);
+		  rs3 = stmt1.executeQuery(query1);
+		  System.out.println(rs3.next());
+		  while(rs3.next()){
+			    assetIds = rs3.getString(1);
+			   }
+		  System.out.println(assetIds);
+		  String getAssetNameSql ="select asset_name from tbl_assets where assets_id in "+"("+assetIds+")";
+		  System.out.println(getAssetNameSql);
+		  rs1 = stmt2.executeQuery(getAssetNameSql);
+		  while(rs1.next()){
+			  String assetName = rs1.getString(1);
+			  System.out.println("Asset Name :"+assetName);
+			  log("Asset Name :"+assetName);
+		 }
+		  
+		  log("Ending getAssets in show " +show);
+    rs1=null;
+    assetIds="";
 	}
 
 	public void getActiveShowsNames(String query) throws SQLException {

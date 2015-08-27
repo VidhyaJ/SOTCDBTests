@@ -1,62 +1,104 @@
-2015-08-25 12:24:25,363 DEBUG [testA] testA
-2015-08-25 12:24:25,910 DEBUG [testA] Starting OpenDbConnection
-2015-08-25 12:24:26,082 DEBUG [testA] Connection to database is Successful
-2015-08-25 12:24:26,082 DEBUG [testA] Ending : SetUpDbConnection
-2015-08-25 12:24:26,176 DEBUG [testA] Starting getActiveShowsCount function
-2015-08-25 12:24:26,176 DEBUG [testA] select count(*) from tbl_sharelink where playname<>''
-2015-08-25 12:24:26,192 DEBUG [testA] Total Records in table is  : 26
-2015-08-25 12:24:26,192 DEBUG [testA] Ending getActiveShowsCount function
-2015-08-25 12:24:26,192 DEBUG [testA] Ending : ActiveShowsCountTest
-2015-08-25 12:24:26,270 DEBUG [testA] Starting getActiveShowsNames
-2015-08-25 12:24:26,270 DEBUG [testA] select playname from tbl_sharelink where playname<>''
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 06
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 01
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 08
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 12
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 13
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 14
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 13
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 08
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 04
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 05
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 10
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 16
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 12
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 03
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 07
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 07
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 20
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: 20
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: New
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: New
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: New
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: New
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: One
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: One
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: Gangadharan
-2015-08-25 12:24:26,285 DEBUG [testA] Showname  1: Gangadharan
-2015-08-25 12:24:26,285 DEBUG [testA]  Ending getActiveShowsNames
-2015-08-25 12:24:26,285 DEBUG [testA] Ending : ActiveShowsListTest
-2015-08-25 12:24:26,348 DEBUG [testA] Starting getRecordCount function
-2015-08-25 12:24:26,348 DEBUG [testA] select count(*) from tbl_assets
-2015-08-25 12:24:26,379 DEBUG [testA] Total Records in table is  : 213
-2015-08-25 12:24:26,379 DEBUG [testA] Ending getRecordCount function
-2015-08-25 12:24:26,379 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
-2015-08-25 12:24:26,410 DEBUG [testA] Starting getRecordCount function
-2015-08-25 12:24:26,410 DEBUG [testA] select count(*) from tbl_user
-2015-08-25 12:24:26,410 DEBUG [testA] Total Records in table is  : 38
-2015-08-25 12:24:26,410 DEBUG [testA] Ending getRecordCount function
-2015-08-25 12:24:26,410 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
-2015-08-25 12:24:26,457 DEBUG [testA] Starting getRecordCount function
-2015-08-25 12:24:26,457 DEBUG [testA] select count(*) from tbl_sharelink
-2015-08-25 12:24:26,457 DEBUG [testA] Total Records in table is  : 329
-2015-08-25 12:24:26,457 DEBUG [testA] Ending getRecordCount function
-2015-08-25 12:24:26,457 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
-2015-08-25 12:24:26,489 DEBUG [testA] Starting getRecordCount function
-2015-08-25 12:24:26,489 DEBUG [testA] select count(*) from tbl_sharelink where playname<>''
-2015-08-25 12:24:26,504 DEBUG [testA] Total Records in table is  : 26
-2015-08-25 12:24:26,504 DEBUG [testA] Ending getRecordCount function
-2015-08-25 12:24:26,504 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
-2015-08-25 12:24:26,551 DEBUG [testA] Start Closing Connection
-2015-08-25 12:24:26,567 DEBUG [testA] Connection closed successfully
-2015-08-25 12:24:26,567 DEBUG [testA] Ending : CloseDbConnection
+2015-08-27 14:54:11,799 DEBUG [testA] testA
+2015-08-27 14:54:12,361 DEBUG [testA] Starting OpenDbConnection
+2015-08-27 14:54:12,471 DEBUG [testA] Connection to database is Successful
+2015-08-27 14:54:12,471 DEBUG [testA] Ending : SetUpDbConnection
+2015-08-27 14:54:12,564 DEBUG [testA] Starting getActiveShowsCount function
+2015-08-27 14:54:12,564 DEBUG [testA] select count(*) from tbl_sharelink where playname<>''
+2015-08-27 14:54:12,596 DEBUG [testA] Total Records in table is  : 58
+2015-08-27 14:54:12,596 DEBUG [testA] Ending getActiveShowsCount function
+2015-08-27 14:54:12,596 DEBUG [testA] Ending : ActiveShowsCountTest
+2015-08-27 14:54:12,674 DEBUG [testA] Starting getActiveShowsNames
+2015-08-27 14:54:12,674 DEBUG [testA] select playname from tbl_sharelink where playname<>''
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Photoshoot
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Buffalo Photos
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Bujjis School Photos
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Express Avenue
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Bujji Collections
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Drag and sequence
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Sequence Again
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Ganga
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Jasper
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Tulips1
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Sathish
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: senttoarjun
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Show Name
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Photoshoot
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: bday
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Edit Show
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Time is 12.50
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: vidhyas second album
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Show Name
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Priyanka Wedding
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Multiple Show 4
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Show1_1207
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Bujji Portfolio
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Show 5 _Uploaded Audio files
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Brights Photoshoot
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Multiple Asset Types
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Sholinganallur Apartment
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Bujji bday video photos
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Opaline Phase 2
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Brights Old Photos
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Windermere Nov Status
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Pappu Function
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Interiors
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: android show
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Shiloh Graduation
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Landscape
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Shiloh
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Create Activity Emails
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Diyaa at My Home 0303
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: SOTC Mob APP
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Flowers
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Bujji 2014 Bday
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Lovedale,Ooty
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Team Lunch at HPC
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: 2012 India Trip Photos
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Lalli Photos
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Reception and Sports day
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Asiana Wedding
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Cumulative Show1
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Album 2
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Camp trip
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Chandras Arangetram
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: 2015 trip
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Sample photos
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Lavanya
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Aug2014
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Jasper 6Dand6E pictures
+2015-08-27 14:54:12,674 DEBUG [testA] Showname  1: Windermere
+2015-08-27 14:54:12,674 DEBUG [testA]  Ending getActiveShowsNames
+2015-08-27 14:54:12,674 DEBUG [testA] Ending : ActiveShowsListTest
+2015-08-27 14:54:12,768 DEBUG [testA] Starting getRecordCount function
+2015-08-27 14:54:12,768 DEBUG [testA] select count(*) from tbl_assets
+2015-08-27 14:54:12,783 DEBUG [testA] Total Records in table is  : 1407
+2015-08-27 14:54:12,783 DEBUG [testA] Ending getRecordCount function
+2015-08-27 14:54:12,783 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-27 14:54:12,830 DEBUG [testA] Starting getRecordCount function
+2015-08-27 14:54:12,830 DEBUG [testA] select count(*) from tbl_user
+2015-08-27 14:54:12,830 DEBUG [testA] Total Records in table is  : 47
+2015-08-27 14:54:12,830 DEBUG [testA] Ending getRecordCount function
+2015-08-27 14:54:12,830 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-27 14:54:12,893 DEBUG [testA] Starting getRecordCount function
+2015-08-27 14:54:12,893 DEBUG [testA] select count(*) from tbl_sharelink
+2015-08-27 14:54:12,893 DEBUG [testA] Total Records in table is  : 349
+2015-08-27 14:54:12,893 DEBUG [testA] Ending getRecordCount function
+2015-08-27 14:54:12,893 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-27 14:54:12,939 DEBUG [testA] Starting getRecordCount function
+2015-08-27 14:54:12,939 DEBUG [testA] select count(*) from tbl_sharelink where playname<>''
+2015-08-27 14:54:12,939 DEBUG [testA] Total Records in table is  : 58
+2015-08-27 14:54:12,939 DEBUG [testA] Ending getRecordCount function
+2015-08-27 14:54:12,939 DEBUG [testA] Ending : GetAsset_Shows_Users_Count
+2015-08-27 14:54:13,018 DEBUG [testA] Starting getAssetsinShow Photoshoot
+2015-08-27 14:54:13,033 DEBUG [testA] **********select assetdata from tbl_sharelink where playname like 'Photoshoot'********
+2015-08-27 14:54:13,049 DEBUG [testA] Asset Name :_DSC0040
+2015-08-27 14:54:13,049 DEBUG [testA] Asset Name :_DSC0413
+2015-08-27 14:54:13,049 DEBUG [testA] Asset Name :Healingbrushmodified
+2015-08-27 14:54:13,049 DEBUG [testA] Asset Name :_DSC0421
+2015-08-27 14:54:13,049 DEBUG [testA] Ending getAssets in show Photoshoot
+2015-08-27 14:54:13,049 DEBUG [testA] Ending : GetAssetsinShowTest
+2015-08-27 14:54:13,096 DEBUG [testA] Starting getAssetsinShow Buffalo Photos
+2015-08-27 14:54:13,096 DEBUG [testA] **********select assetdata from tbl_sharelink where playname like 'Buffalo Photos'********
+2015-08-27 14:54:13,158 DEBUG [testA] Start Closing Connection
+2015-08-27 14:54:13,158 DEBUG [testA] Connection closed successfully
+2015-08-27 14:54:13,158 DEBUG [testA] Ending : CloseDbConnection

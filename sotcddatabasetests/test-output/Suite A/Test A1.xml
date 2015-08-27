@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Lenovo-PC" name="com.qtpselenium.framework.SuiteA.TestA1" tests="8" failures="0" timestamp="25 Aug 2015 06:54:26 GMT" time="1.236" errors="0">
-  <testcase name="SetUpDbConnection" time="0.219" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="ActiveShowsCountTest" time="0.063" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="ActiveShowsListTest" time="0.062" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+<testsuite hostname="Lenovo-PC" name="com.qtpselenium.framework.SuiteA.TestA1" tests="10" failures="1" timestamp="27 Aug 2015 09:24:13 GMT" time="1.422" errors="0">
+  <testcase name="SetUpDbConnection" time="0.164" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="ActiveShowsCountTest" time="0.078" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="ActiveShowsListTest" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
   <testcase name="GetAsset_Shows_Users_Count" time="0.078" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="GetAsset_Shows_Users_Count" time="0.031" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
   <testcase name="GetAsset_Shows_Users_Count" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
-  <testcase name="GetAsset_Shows_Users_Count" time="0.031" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="GetAsset_Shows_Users_Count" time="0.063" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="GetAsset_Shows_Users_Count" time="0.046" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="GetAssetsinShowTest" time="0.078" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
+  <testcase name="GetAssetsinShowTest" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1">
+    <failure type="org.postgresql.util.PSQLException" message="ERROR: syntax error at or near &amp;quot;)&amp;quot;
+  Position: 55">
+      <![CDATA[org.postgresql.util.PSQLException: ERROR: syntax error at or near ")"
+  Position: 55
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2270)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1998)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:570)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:406)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:286)
+	at com.qtpselenium.framework.Util.Keywords.getAssetsinShow(Keywords.java:139)
+	at com.qtpselenium.framework.Util.Keywords.executeKeywords(Keywords.java:111)
+	at com.qtpselenium.framework.SuiteA.TestA1.GetAssetsinShowTest(TestA1.java:83)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
   <testcase name="CloseDbConnection" time="0.047" classname="com.qtpselenium.framework.SuiteA.TestA1"/>
 </testsuite>

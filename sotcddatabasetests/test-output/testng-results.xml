@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="10" passed="9">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite A" duration-ms="1422" started-at="2015-08-27T14:54:11Z" finished-at="2015-08-27T14:54:13Z">
+  <suite name="Suite A" duration-ms="1804" started-at="2015-08-27T15:20:22Z" finished-at="2015-08-27T15:20:24Z">
     <groups>
     </groups>
-    <test name="Test A1" duration-ms="1422" started-at="2015-08-27T14:54:11Z" finished-at="2015-08-27T14:54:13Z">
+    <test name="Test A1" duration-ms="1804" started-at="2015-08-27T15:20:22Z" finished-at="2015-08-27T15:20:24Z">
       <class name="com.qtpselenium.framework.SuiteA.TestA1">
-        <test-method status="PASS" signature="initializeTest()" name="initializeTest" is-config="true" duration-ms="47" started-at="2015-08-27T14:54:11Z" finished-at="2015-08-27T14:54:11Z">
+        <test-method status="PASS" signature="initializeTest()" name="initializeTest" is-config="true" duration-ms="31" started-at="2015-08-27T15:20:22Z" finished-at="2015-08-27T15:20:22Z">
         </test-method>
-        <test-method status="PASS" signature="SetUpDbConnection(java.util.Hashtable)" name="SetUpDbConnection" duration-ms="164" started-at="2015-08-27T14:54:12Z" finished-at="2015-08-27T14:54:12Z">
+        <test-method status="PASS" signature="SetUpDbConnection(java.util.Hashtable)" name="SetUpDbConnection" duration-ms="549" started-at="2015-08-27T15:20:23Z" finished-at="2015-08-27T15:20:23Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="ActiveShowsCountTest(java.util.Hashtable)" name="ActiveShowsCountTest" duration-ms="78" started-at="2015-08-27T14:54:12Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:12Z">
+        <test-method status="PASS" signature="ActiveShowsCountTest(java.util.Hashtable)" name="ActiveShowsCountTest" duration-ms="78" started-at="2015-08-27T15:20:23Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:23Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="ActiveShowsListTest(java.util.Hashtable)" name="ActiveShowsListTest" duration-ms="47" started-at="2015-08-27T14:54:12Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:12Z">
+        <test-method status="PASS" signature="ActiveShowsListTest(java.util.Hashtable)" name="ActiveShowsListTest" duration-ms="63" started-at="2015-08-27T15:20:23Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:23Z">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="78" started-at="2015-08-27T14:54:12Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:12Z">
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="78" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-27T14:54:12Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:12Z">
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="63" started-at="2015-08-27T14:54:12Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:12Z">
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="31" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="46" started-at="2015-08-27T14:54:12Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:12Z">
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
           <params>
             <param index="0">
               <value>
@@ -72,70 +72,34 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="78" started-at="2015-08-27T14:54:12Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:13Z">
+        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="50" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{showname=Photoshoot, Runmode=Y, Iteration=1}]]>
+                <![CDATA[{showname=Buffalo Photos, Runmode=Y, Iteration=1}]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="FAIL" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="47" started-at="2015-08-27T14:54:13Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T14:54:13Z">
+        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="31" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{showname=Buffalo Photos, Runmode=Y, Iteration=2}]]>
+                <![CDATA[{showname=Photoshoot, Runmode=Y, Iteration=2}]]>
               </value>
             </param>
           </params>
-          <exception class="org.postgresql.util.PSQLException">
-            <message>
-              <![CDATA[ERROR: syntax error at or near ")"
-  Position: 55]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.postgresql.util.PSQLException: ERROR: syntax error at or near ")"
-  Position: 55
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2270)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1998)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
-	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:570)
-	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:406)
-	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:286)
-	at com.qtpselenium.framework.Util.Keywords.getAssetsinShow(Keywords.java:139)
-	at com.qtpselenium.framework.Util.Keywords.executeKeywords(Keywords.java:111)
-	at com.qtpselenium.framework.SuiteA.TestA1.GetAssetsinShowTest(TestA1.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:203)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:174)
-]]>
-            </full-stacktrace>
-          </exception>
         </test-method>
-        <test-method status="PASS" signature="CloseDbConnection(java.util.Hashtable)" name="CloseDbConnection" duration-ms="47" started-at="2015-08-27T14:54:13Z" finished-at="2015-08-27T14:54:13Z">
+        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="68" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{showname=Jasper, Runmode=Y, Iteration=3}]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="CloseDbConnection(java.util.Hashtable)" name="CloseDbConnection" duration-ms="33" started-at="2015-08-27T15:20:24Z" finished-at="2015-08-27T15:20:24Z">
           <params>
             <param index="0">
               <value>

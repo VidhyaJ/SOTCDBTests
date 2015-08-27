@@ -118,34 +118,31 @@ public class Keywords {
 
 	public void getAssetsinShow(String show) throws SQLException {
 	
-		  log("Starting getAssetsinShow " +show);
+		   log("Starting getAssetsinShow " +show);
+		   		   
 		   stmt1 = conn.createStatement();
-		  stmt2 = conn.createStatement();
-		 
-		  log("**********select assetdata from tbl_sharelink where playname like "+"\'"+show+"\'********");
+		   stmt2 = conn.createStatement();
 		  
-		  //String query1="select assetdata,playname from tbl_sharelink where playname like "+"'"+show+"'";
-		  String query1="select assetdata,playname from tbl_sharelink where playname ='"+show+"'";
-		 
-		  System.out.println(query1);
-		  rs3 = stmt1.executeQuery(query1);
-		  System.out.println(rs3.next());
-		  while(rs3.next()){
-			    assetIds = rs3.getString(1);
-			   }
-		  System.out.println(assetIds);
-		  String getAssetNameSql ="select asset_name from tbl_assets where assets_id in "+"("+assetIds+")";
-		  System.out.println(getAssetNameSql);
-		  rs1 = stmt2.executeQuery(getAssetNameSql);
-		  while(rs1.next()){
-			  String assetName = rs1.getString(1);
-			  System.out.println("Asset Name :"+assetName);
-			  log("Asset Name :"+assetName);
-		 }
+		  String query1="select assetdata,playname from tbl_sharelink where playname like "+"'"+show+"'";
 		  
+		  rs1 = stmt1.executeQuery(query1);
+          while(rs1.next()){
+               assetIds = rs1.getString(1);
+               String showName = rs1.getString(2);
+               System.out.println("Show Name : "+showName);
+         }
+          
+   
+          String getAssetNameSql ="select asset_name from tbl_assets where assets_id in "+ "("+assetIds+")";
+          rs1 = stmt2.executeQuery(getAssetNameSql);
+          int i=1;
+          while(rs1.next()){
+        	  
+              String assetName = rs1.getString(1);
+              log("Asset Name :"+i+"---"+assetName);
+              i++;
+         }
 		  log("Ending getAssets in show " +show);
-    rs1=null;
-    assetIds="";
 	}
 
 	public void getActiveShowsNames(String query) throws SQLException {
@@ -156,8 +153,9 @@ public class Keywords {
     	rs1 = stmt1.executeQuery(query);
     	int i=1;
         while(rs1.next()){
-	    System.out.println("Shownames : " +rs1.getString(1));
+	    //System.out.println("Shownames : " +rs1.getString(1));
         log("Showname  " +i+": " +rs1.getString(1));
+        i++;
         }
         log(" Ending getActiveShowsNames");
 	

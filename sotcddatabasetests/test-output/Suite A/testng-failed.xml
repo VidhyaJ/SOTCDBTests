@@ -7,7 +7,7 @@
         <methods>
           <include name="SetUpDbConnection"/>
           <include name="initializeTest"/>
-          <include name="GetAssetsinShowTest" invocation-numbers="1"/>
+          <include name="GetAssetsinShowTest" invocation-numbers="0 1"/>
         </methods>
       </class>
     </classes>

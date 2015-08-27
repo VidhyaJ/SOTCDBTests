@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qtpselenium.framework.SuiteA.TestA1">
         <methods>
-          <include name="ActiveShowsCountTest" invocation-numbers="0"/>
           <include name="SetUpDbConnection"/>
           <include name="initializeTest"/>
+          <include name="GetAssetsinShowTest" invocation-numbers="0 1"/>
         </methods>
       </class>
     </classes>

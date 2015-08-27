@@ -57,8 +57,11 @@ public class Keywords {
 	static Keywords k;
 	public static String count;
 	public static ResultSet rs1=null;
+	public static ResultSet rs3=null;
 	public static Statement stmt1=null;
+	public static Statement stmt2=null;
 	public static Connection conn;
+	public static String assetIds=null;
 	
 		
 	public Keywords(){
@@ -104,11 +107,42 @@ public class Keywords {
 				case "closedbConnection":
 					closedbConnection();
 					break;
+				case "getAssetsinShow":
+					  getAssetsinShow(data.get("showname"));
 				default:
 					break;
 				}		
 			}
 		}			
+	}
+
+	public void getAssetsinShow(String show) throws SQLException {
+	
+		   log("Starting getAssetsinShow " +show);
+		   		   
+		   stmt1 = conn.createStatement();
+		   stmt2 = conn.createStatement();
+		  
+		  String query1="select assetdata,playname from tbl_sharelink where playname like "+"'"+show+"'";
+		  
+		  rs1 = stmt1.executeQuery(query1);
+          while(rs1.next()){
+               assetIds = rs1.getString(1);
+               String showName = rs1.getString(2);
+               System.out.println("Show Name : "+showName);
+         }
+          
+   
+          String getAssetNameSql ="select asset_name from tbl_assets where assets_id in "+ "("+assetIds+")";
+          rs1 = stmt2.executeQuery(getAssetNameSql);
+          int i=1;
+          while(rs1.next()){
+        	  
+              String assetName = rs1.getString(1);
+              log("Asset Name :"+i+"---"+assetName);
+              i++;
+         }
+		  log("Ending getAssets in show " +show);
 	}
 
 	public void getActiveShowsNames(String query) throws SQLException {
@@ -119,7 +153,7 @@ public class Keywords {
     	rs1 = stmt1.executeQuery(query);
     	int i=1;
         while(rs1.next()){
-	    System.out.println("Shownames : " +rs1.getString(1));
+	    //System.out.println("Shownames : " +rs1.getString(1));
         log("Showname  " +i+": " +rs1.getString(1));
         i++;
         }

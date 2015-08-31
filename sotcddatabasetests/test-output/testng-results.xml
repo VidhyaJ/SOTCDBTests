@@ -2,25 +2,14 @@
 <testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Suite A" duration-ms="1804" started-at="2015-08-27T15:20:22Z" finished-at="2015-08-27T15:20:24Z">
+  <suite name="Suite A" duration-ms="4717" started-at="2015-08-31T14:12:17Z" finished-at="2015-08-31T14:12:21Z">
     <groups>
     </groups>
-    <test name="Test A1" duration-ms="1804" started-at="2015-08-27T15:20:22Z" finished-at="2015-08-27T15:20:24Z">
+    <test name="Test A1" duration-ms="4717" started-at="2015-08-31T14:12:17Z" finished-at="2015-08-31T14:12:21Z">
       <class name="com.qtpselenium.framework.SuiteA.TestA1">
-        <test-method status="PASS" signature="initializeTest()" name="initializeTest" is-config="true" duration-ms="31" started-at="2015-08-27T15:20:22Z" finished-at="2015-08-27T15:20:22Z">
+        <test-method status="PASS" signature="initializeTest()" name="initializeTest" is-config="true" duration-ms="327" started-at="2015-08-31T14:12:17Z" finished-at="2015-08-31T14:12:17Z">
         </test-method>
-        <test-method status="PASS" signature="SetUpDbConnection(java.util.Hashtable)" name="SetUpDbConnection" duration-ms="549" started-at="2015-08-27T15:20:23Z" finished-at="2015-08-27T15:20:23Z">
-=======
-  <suite name="Suite A" duration-ms="2393" started-at="2015-08-25T12:46:15Z" finished-at="2015-08-25T12:46:17Z">
-    <groups>
-    </groups>
-    <test name="Test A1" duration-ms="2393" started-at="2015-08-25T12:46:15Z" finished-at="2015-08-25T12:46:17Z">
-      <class name="com.qtpselenium.framework.SuiteA.TestA1">
-        <test-method status="PASS" signature="initializeTest()" name="initializeTest" is-config="true" duration-ms="48" started-at="2015-08-25T12:46:15Z" finished-at="2015-08-25T12:46:15Z">
-        </test-method>
-        <test-method status="PASS" signature="SetUpDbConnection(java.util.Hashtable)" name="SetUpDbConnection" duration-ms="1385" started-at="2015-08-25T12:46:15Z" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="SetUpDbConnection(java.util.Hashtable)" name="SetUpDbConnection" duration-ms="810" started-at="2015-08-31T14:12:20Z" finished-at="2015-08-31T14:12:20Z">
           <params>
             <param index="0">
               <value>
@@ -29,11 +18,7 @@
             </param>
           </params>
         </test-method>
-<<<<<<< HEAD
-        <test-method status="PASS" signature="ActiveShowsCountTest(java.util.Hashtable)" name="ActiveShowsCountTest" duration-ms="78" started-at="2015-08-27T15:20:23Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:23Z">
-=======
-        <test-method status="PASS" signature="ActiveShowsCountTest(java.util.Hashtable)" name="ActiveShowsCountTest" duration-ms="79" started-at="2015-08-25T12:46:17Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="ActiveShowsCountTest(java.util.Hashtable)" name="ActiveShowsCountTest" duration-ms="269" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -42,11 +27,7 @@
             </param>
           </params>
         </test-method>
-<<<<<<< HEAD
-        <test-method status="PASS" signature="ActiveShowsListTest(java.util.Hashtable)" name="ActiveShowsListTest" duration-ms="63" started-at="2015-08-27T15:20:23Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:23Z">
-=======
-        <test-method status="PASS" signature="ActiveShowsListTest(java.util.Hashtable)" name="ActiveShowsListTest" duration-ms="47" started-at="2015-08-25T12:46:17Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="ActiveShowsListTest(java.util.Hashtable)" name="ActiveShowsListTest" duration-ms="57" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -55,11 +36,7 @@
             </param>
           </params>
         </test-method>
-<<<<<<< HEAD
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="78" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
-=======
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-25T12:46:17Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="87" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -68,11 +45,7 @@
             </param>
           </params>
         </test-method>
-<<<<<<< HEAD
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
-=======
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-25T12:46:17Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="60" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -81,11 +54,7 @@
             </param>
           </params>
         </test-method>
-<<<<<<< HEAD
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="31" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
-=======
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-25T12:46:17Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="60" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -94,11 +63,7 @@
             </param>
           </params>
         </test-method>
-<<<<<<< HEAD
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="47" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
-=======
-        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="62" started-at="2015-08-25T12:46:17Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="GetAsset_Shows_Users_Count(java.util.Hashtable)" name="GetAsset_Shows_Users_Count" duration-ms="37" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -107,8 +72,7 @@
             </param>
           </params>
         </test-method>
-<<<<<<< HEAD
-        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="50" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
+        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="61" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -117,7 +81,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="31" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
+        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="44" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -126,7 +90,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="68" started-at="2015-08-27T15:20:24Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-27T15:20:24Z">
+        <test-method status="PASS" signature="GetAssetsinShowTest(java.util.Hashtable)" name="GetAssetsinShowTest" duration-ms="38" started-at="2015-08-31T14:12:21Z" depends-on-methods="com.qtpselenium.framework.SuiteA.TestA1.SetUpDbConnection" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>
@@ -135,10 +99,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="CloseDbConnection(java.util.Hashtable)" name="CloseDbConnection" duration-ms="33" started-at="2015-08-27T15:20:24Z" finished-at="2015-08-27T15:20:24Z">
-=======
-        <test-method status="PASS" signature="CloseDbConnection(java.util.Hashtable)" name="CloseDbConnection" duration-ms="31" started-at="2015-08-25T12:46:17Z" finished-at="2015-08-25T12:46:17Z">
->>>>>>> db00b3e28c9163f44f694dc4beb6df8a53cd8479
+        <test-method status="PASS" signature="CloseDbConnection(java.util.Hashtable)" name="CloseDbConnection" duration-ms="67" started-at="2015-08-31T14:12:21Z" finished-at="2015-08-31T14:12:21Z">
           <params>
             <param index="0">
               <value>

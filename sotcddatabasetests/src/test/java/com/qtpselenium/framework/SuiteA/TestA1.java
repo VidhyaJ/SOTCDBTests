@@ -18,12 +18,17 @@ public class TestA1 {
 	public static Keywords app;
 	public static Logger log=null;
 	public static String testName="testA";
+	public static String domainname;
 	
 	@BeforeTest
 	public static void initializeTest(){
 		log=Utility.initLogs(testName);
 	}
 		
+	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA")
+	public void getDbforDomain(Hashtable<String,String> data){
+		
+	}
 	
 	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA")
 	public void SetUpDbConnection(Hashtable<String,String> data) throws Exception{

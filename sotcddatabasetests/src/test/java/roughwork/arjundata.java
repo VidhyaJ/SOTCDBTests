@@ -39,6 +39,7 @@ public class arjundata {
 	            Statement stmt1 = conn.createStatement();
 	          
 	          
+	           // String query1="select account_id,url from tbl_accounts where flag=1 and activate=true and product_id=1 and account_id='4144'";
 	            String query1="select account_id,url from tbl_accounts where flag=1 and activate=true and product_id=1 and account_id='4144'";
 	            rs1 = stmt1.executeQuery(query1);
 	            while(rs1.next()){
@@ -52,24 +53,35 @@ public class arjundata {
 	            String hostname="jdbc:postgresql://10.37.4.140:5432/"+url;
 	            conn=getConnection(hostname,userName,password);
 	             Statement stmt2 = conn.createStatement();
-	            String query2 ="select asset_name from tbl_assets";
+	            //String query2 ="select asset_name from tbl_assets";
+	            
+	             //Below code to find - Total Asset count in respective show
+	             
+	             //String query2 ="select array_length(regexp_split_to_array(assetdata, ','), 1) as assetCount,playname from tbl_sharelink where trim(playname)<>'' order by assetCount desc";
+	             String query2 = "select count(*) from tbl_sharelink";
 	            rs1 = stmt2.executeQuery(query2);
+	            
+	            
 	            while(rs1.next()){
-	                String assetName = rs1.getString(1);
+	                String showName = rs1.getString(1);
 	                
-	                System.out.println("Asset Name :"+assetName);
+	                System.out.println("Show 1 :"+showName);
 	           }
+	          //Above mentioned comments ends
+	            
 	          
 	        }catch(Exception e){
 	                e.printStackTrace();
 	        }finally{
 	            //closeconnection();
 	        }    
-
+       
 	  }
-	 
+
+	//String query2 ="select array_length(regexp_split_to_array(assetdata, ','), 1) as assetCount,playname from tbl_sharelink where trim(playname)<>'' order by assetCount desc";
+	
 	  public static Connection getConnection(String hostname,String userName,String password) throws SQLException{        
-	      System.out.println("Inside conenction");
+	      System.out.println("Inside connection");
 	      conn = DriverManager.getConnection(hostname,userName,password);
 	      return conn;
 	      

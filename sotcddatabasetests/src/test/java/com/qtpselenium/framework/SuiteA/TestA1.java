@@ -36,6 +36,18 @@ public class TestA1 {
 		log.debug("Ending : "+testName);
 		
 	}
+	
+	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA",dependsOnMethods = { "SetUpDbConnection" })
+	public void GetSentShowsInfo(Hashtable<String,String> data) throws Exception{
+		String testName="GetSentShowsInfo";
+		Xls_Reader xls = new Xls_Reader(Constants.SUITEA_XLS_PATH);
+		Utility.validateTestExecution(testName,"SUITEA",data.get(Constants.RUNMODE_COL),xls);
+		Keywords app = Keywords.getInstance();
+		app.setLogger(log);
+		app.executeKeywords(testName,xls,data);
+		log.debug("Ending : "+testName);
+		
+	}
 
 	@Test(dataProviderClass=TestCaseDataProvider.class,dataProvider="getDataForSuiteA",dependsOnMethods = { "SetUpDbConnection" })
 	public void GetAsset_Shows_Users_Count(Hashtable<String,String> data) throws Exception{
